@@ -6,10 +6,10 @@ import org.openqa.selenium.WebDriver;
 public class HomePage {
     private WebDriver webDriver;
 
-    private By userNameField = new By.ByName("user-name");
-    private By passwordField = new By.ByName("password");
-    private By loginButton = new By.ById("login-button");
-    private By errorMessageContainer = new By.ByClassName("error-message-container");
+    private final By userNameField = new By.ByName("user-name");
+    private final By passwordField = new By.ByName("password");
+    private final By loginButton = new By.ById("login-button");
+    private final By errorMessageContainer = new By.ByClassName("error-message-container");
 
     public HomePage(WebDriver webDriver) {
         this.webDriver = webDriver;

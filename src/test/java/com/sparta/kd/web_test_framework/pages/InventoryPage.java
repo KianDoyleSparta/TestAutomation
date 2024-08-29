@@ -9,10 +9,10 @@ import java.util.List;
 public class InventoryPage {
     private WebDriver webDriver;
 
-    private By item = new By.ByClassName("inventory_item");
-    private By addToCart = new By.ByTagName("button");
-    private By cart = new By.ById("shopping_cart_container");
-    private By cartBadge = new By.ByClassName("shopping_cart_badge");
+    private final By item = new By.ByClassName("inventory_item");
+    private final By button = new By.ByTagName("button");
+    private final By cart = new By.ById("shopping_cart_container");
+    private final By cartBadge = new By.ByClassName("shopping_cart_badge");
 
     public InventoryPage(WebDriver webDriver) {
         this.webDriver = webDriver;
@@ -31,7 +31,7 @@ public class InventoryPage {
     }
 
     public void addToCart(WebElement item) {
-        item.findElement(addToCart).click();
+        item.findElement(button).click();
     }
 
 }

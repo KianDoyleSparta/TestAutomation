@@ -29,8 +29,4 @@ public class Website {
         return webDriver.getTitle();
     }
 
-
-
-
-
 }
